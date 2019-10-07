@@ -1,0 +1,25 @@
+{
+  "name": "wake-on-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusvellone/wake-on-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusvellone/wake-on-bot/issues"
+  },
+  "homepage": "https://github.com/matheusvellone/wake-on-bot#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "wol": "^1.0.6"
+  }
+}
