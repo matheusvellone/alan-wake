@@ -18,9 +18,11 @@ const bot = new TelegramBot(TOKEN, { polling: true })
 
 bot.onText(/start/, async (msg) => {
   const chatId = msg.chat.id
-
+  
   try {
+    console.log('Received message to turn on PC', new Date())
     await wake(MAC_ADDRESS)
+    console.log('PC turned on')
     await bot.sendMessage(chatId, 'Turning on PC')
   } catch (error) {
     await bot.sendMessage(chatId, 'Something went wrong')
