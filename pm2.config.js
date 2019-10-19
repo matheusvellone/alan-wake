@@ -5,6 +5,7 @@ module.exports = {
       exec_mode: 'cluster',
       instances: 1,
       script: './index.js',
+      cwd: __dirname,
       watch: false,
       log_date_format: 'YYYY-MM-DD HH:mm Z',
       merge_logs: true,
