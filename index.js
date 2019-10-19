@@ -16,7 +16,7 @@ const wake = (macAddress) => new Promise((resolve, reject) => {
 
 const bot = new TelegramBot(TOKEN, { polling: true })
 
-bot.onText(/ping$/i, (msg) => {
+bot.onText(/ping$/i, async (msg) => {
   const chatId = msg.chat.id
 
   await bot.sendMessage(chatId, 'Pong!')
