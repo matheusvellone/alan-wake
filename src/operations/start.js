@@ -1,9 +1,13 @@
 const bot = require('../bot')
-const macAddresses = require('../../MACs.json')
+const dynamodb = require('../dynamodb')
 
 module.exports = async (msg) => {
   const chatId = msg.chat.id
   const user = msg.from.username
+
+  const { Items: macAddresses } = await dynamodb.scan({
+    TableName: 'alan-wake',
+  }).promise()
 
   const availableMacs = macAddresses
     .filter((data) => data.users.includes(user))
