@@ -2,13 +2,14 @@
   "name": "wake-on-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "delete": "pm2 delete pm2.config.js",
     "start": "pm2 start pm2.config.js",
     "status": "pm2 status pm2.config.js",
-    "stop": "pm2 stop pm2.config.js"
+    "stop": "pm2 stop pm2.config.js",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "wol": "^1.0.6"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
   }
 }

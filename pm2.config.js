@@ -4,7 +4,7 @@ module.exports = {
       name: 'wake on lan',
       exec_mode: 'cluster',
       instances: 1,
-      script: './src/index.js',
+      script: './dist/app.bundle.js',
       cwd: __dirname,
       watch: false,
       log_date_format: 'YYYY-MM-DD HH:mm Z',

@@ -15,7 +15,7 @@ All configs are set via environment variables (check `.env.example`) and the MAC
 # Running
 
 To run in dev mode: `npm run dev`.
-To run in prod mode: `npm start`.
+To run in prod mode: `npm run build` and `npm start`.
 
 `start.sh` file are available to allow starting the application on the startup, which will keep the application running after rebooting the host running this application.
 
